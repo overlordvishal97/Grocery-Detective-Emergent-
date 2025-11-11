@@ -1,6 +1,6 @@
 Our mission is to empower consumers by simplifying complex ingredient and nutritional data directly from product labels. Scan a barcode, and instantly uncover detailed insights, potential allergens, questionable additives, and receive a personalized "verdict" on whether it aligns with your dietary needs and health goals. No more guesswork, just informed choices.
 
-#✨ Features
+# ✨ Features
 Barcode & QR Code Scanning: Effortlessly scan products to retrieve comprehensive information.
 Instant Ingredient Breakdown: Decode complex ingredient lists into easy-to-understand terms.
 Nutritional Fact Simplification: Visualize key nutritional data, highlighting areas of concern (e.g., high sugar, unhealthy fats).
@@ -13,7 +13,7 @@ Search & Discover: Explore product details even without scanning.
 🚀 Technologies Used
 This project is built with a modern and robust stack, ensuring a fast, scalable, and maintainable application:
 
-#Frontend Development:
+# Frontend Development:
 
 Vite: A fast and lightweight build tool for modern web projects.
 TypeScript: A superset of JavaScript that adds static types, enhancing code quality and developer experience.
