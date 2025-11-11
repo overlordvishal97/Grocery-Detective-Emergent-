@@ -1,21 +1,32 @@
 {
   "expo": {
-    "name": "frontend",
-    "slug": "frontend",
+    "name": "Grocery Detective",
+    "slug": "grocery-detective",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "frontend",
+    "scheme": "grocerydetective",
     "userInterfaceStyle": "automatic",
+    "description": "Scan food products and analyze ingredients with AI. Make informed decisions about what you eat.",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.grocerydetective.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to scan product barcodes and ingredient labels.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to analyze product images."
+      }
     },
     "android": {
+      "package": "com.grocerydetective.app",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#000"
+        "backgroundColor": "#4CAF50"
       },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE"
+      ],
       "edgeToEdgeEnabled": true
     },
     "web": {
@@ -26,12 +37,18 @@
     "plugins": [
       "expo-router",
       [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Grocery Detective to access your camera to scan barcodes and ingredient labels."
+        }
+      ],
+      [
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#000"
+          "backgroundColor": "#4CAF50"
         }
       ]
     ],
